@@ -1,0 +1,269 @@
+.container {
+    margin: 0 auto;
+
+    background-color: #F7F7F7;
+    width: 400px;
+}
+
+.head {
+    position: fixed;
+    top: 0px;
+    width: 400px;
+    text-align: center;
+    background-color: #f7f7f7;
+    height: 30px;
+    line-height: 30px;
+}
+
+.head>span {
+    font-size: 30px;
+    position: absolute;
+    right: 15px;
+}
+
+.zhanban {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.changyong {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.changyong>div {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 140px;
+    font-size: 12px;
+    box-sizing: border-box;
+    border: 2px solid #F7F7F7;
+    background-repeat: no-repeat;
+    background-position: 28px 20px;
+}
+
+/* 常用软件的每一个div内的图标都用背景图片来展示 */
+.changyong>div:nth-child(1) {
+    background-image: url('./img/app1.png');
+}
+
+.changyong>div:nth-child(2) {
+    background-image: url('./img/app2.png');
+}
+
+.changyong>div:nth-child(3) {
+    background-image: url('./img/app3.png');
+}
+
+.changyong>div:nth-child(4) {
+    background-image: url('./img/app4.png');
+}
+
+.changyong>div:nth-child(5) {
+    background-image: url('./img/app5.png');
+}
+
+.changyong>div:nth-child(6) {
+    background-image: url('./img/app6.png');
+}
+
+.changyong>div:nth-child(7) {
+    background-position: 32px 20px;
+    background-image: url('./img/app7.png');
+}
+
+.changyong>div:nth-child(8) {
+    background-image: url('./img/app8.png');
+}
+
+.nodata {
+    text-indent: 50px;
+    background-color: #fff;
+    height: 40px;
+    background-image: url('./img/nodata.png');
+    line-height: 40px;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 16px 9px;
+    margin-bottom: 20px;
+}
+
+.kebiao {
+    width: 400px;
+    height: 160px;
+    background-color: #fff;
+    margin-bottom: 20px;
+
+}
+
+.kebiao>.headline {
+    margin-bottom: 5px;
+    text-indent: 30px;
+    background-image: url('./img/课表1.png');
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    line-height: 50px;
+}
+
+.kebiao>.kb {
+    width: 400px;
+    height: 95px;
+    background-color: #EEFCFF;
+    background-image: url('./img/课表2.png');
+    background-repeat: no-repeat;
+    background-position: 75px 20px;
+    color: #ABBEC2;
+    text-align: center;
+    line-height: 95px;
+}
+
+.zixun {
+    width: 400px;
+    /* height: 700px; */
+    margin-bottom: 110px;
+    background-color: #fff;
+}
+
+.zixun>.headline {
+    background-image: url('./img/资讯1.png');
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.zixun>.headline>span:nth-child(1) {
+    margin-right: 220px;
+    margin-left: 25px;
+}
+
+.zixun>.headline>span:nth-child(2) {
+    color: #797979;
+}
+
+.zixun>.zx {
+    width: 350px;
+    height: 90px;
+    background-color: #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-bottom: #F7F7F7 solid 2px;
+    box-sizing: content-box;
+    padding-top: 12px;
+
+    /* 把每一个资讯的盒子的位置样式都设置成非static，以便于盒子内落款子元素的相对布局 */
+    position: relative;
+
+}
+
+.zixun>.zx>.headline {
+    padding-bottom: 15px;
+    line-height: 23px;
+    font-size: 15px;
+}
+
+.zixun>.zx>.luokuan {
+    position: absolute;
+    bottom: 15px;
+
+}
+
+.zixun>.zx>.luokuan>span:nth-child(1) {
+    color: #5ABBFA;
+    font-size: 12px;
+}
+
+.zixun>.zx>.luokuan>span:nth-child(2) {
+    margin-left: 20px;
+    color: #DEDEDE;
+    font-size: 12px;
+}
+
+.end {
+    width: 400px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0px;
+    left: 400 px;
+    font-size: 12px;
+    color: #A5A5A5;
+    line-height: 110px;
+    padding: 0px 10px;
+}
+
+.end div {
+    text-align: center;
+}
+
+.end>div:nth-child(1) {
+    width: 50px;
+    background-image: url('./img/end1.png');
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.end>div:nth-child(2) {
+    width: 50px;
+    background-image: url('./img/end2.png');
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+    background-repeat: no-repeat;
+}
+
+.end>div:nth-child(3) {
+    width: 50px;
+    background-image: url('./img/end3.png');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: -5px 10px;
+    position: relative;
+    top: -15px;
+    line-height: 140px;
+}
+
+.end>div:nth-child(3)>div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #45B6FC;
+    position: relative;
+    top: -25px;
+}
+
+.end>div:nth-child(3)>div:nth-child(1)>img {
+    position: relative;
+    top: -25px;
+}
+
+.end>div:nth-child(4) {
+    width: 50px;
+    background-image: url('./img/end4.png');
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.end>div:nth-child(5) {
+    width: 50px;
+    background-image: url('./img/end5.png');
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+#kb:hover {
+    background-image: url('/img/end2\(3\).png');
+    background-position: 5px 10px;
+    background-size: 35px;
+    color: #45B6FC
+        /* background-color: red; */
+}
